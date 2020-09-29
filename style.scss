@@ -6,6 +6,7 @@ $light-magenta:hsl(300, 24%, 96%);
 
 body {
     font-family: sans-serif;
+    font-weight: 500;
 }
 
 
@@ -52,6 +53,7 @@ $layout-breakpoint-small: 960px;
         .card__body {
             font-weight: bold;
             color: $light-magenta;
+            line-height: 25px;;
         }
 
         .card__header {
@@ -70,17 +72,29 @@ $layout-breakpoint-small: 960px;
                 * {
                     display: block;
                 }
+
+                h1 {
+                    font-size: large;
+                }
+
                 span {
-                    font-size: 15px;
+                    font-size: large;
                 }
             }
             margin-bottom: 20px;;
         }
+        padding: 30px;
         margin-bottom: 10px;
     }
 
     body {
         background-image: url(images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+        margin: 0 30px;
+    }
+
+    .stars {
+        margin-bottom: 15px;
     }
 
     .sub-text {
@@ -95,16 +109,6 @@ $layout-breakpoint-small: 960px;
     }
 
     .rating {
-        .stars {
-            background-image: url(images/icon-star.svg),
-                                url(images/icon-star.svg),
-                                url(images/icon-star.svg),
-                                url(images/icon-star.svg),
-                                url(images/icon-star.svg);
-            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-            height: 25px;
-        }
-
         color: $primary;
         background-color: $light-magenta;
         width: 100%;
@@ -113,6 +117,11 @@ $layout-breakpoint-small: 960px;
         padding: 25px 0;
         margin-bottom: 1rem;
         border-radius: 5px;
-        font-size: 12px;
+        font-size: medium;
+    }
+
+    .col > h1 {
+        text-align: center;
+        font-size: xx-large;
     }
 }
