@@ -22,7 +22,7 @@ h1 {
   border-radius: 10px;
 }
 
-.card__header {
+.card__header * {
   display: inline-block;
 }
 .card__header img {
@@ -36,12 +36,34 @@ h1 {
 }
 
 @media (max-width: 960px) {
-  body {
-    background-image: url(images/bg-pattern-top-mobile.svg);
+  .card {
+    margin-bottom: 10px;
+  }
+  .card .card__body {
+    font-weight: bold;
+    color: #f7f2f7;
+  }
+  .card .card__header {
+    margin-bottom: 20px;
+  }
+  .card .card__header h1 {
+    text-align: center;
+    margin: unset;
+    font-size: 25px;
+  }
+  .card .card__header img {
+    max-width: 50px;
+    margin-right: 20px;
+  }
+  .card .card__header .title * {
+    display: block;
+  }
+  .card .card__header .title span {
+    font-size: 15px;
   }
 
-  h1 {
-    text-align: center;
+  body {
+    background-image: url(images/bg-pattern-top-mobile.svg);
   }
 
   .sub-text {
